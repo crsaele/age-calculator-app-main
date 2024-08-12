@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+label {
+    font-size: 2em;
+    color: hsl(0, 1%, 44%);
+}
+
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    height: 450px;
+    width: 600px;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 600px) {
+    /* Styles for screens smaller than 600px */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    label {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    /* Styles for screens larger than 600px */
+    form {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    label {
+      margin-right: 10px;
+    }
+  }
